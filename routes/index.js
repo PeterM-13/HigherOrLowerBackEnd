@@ -7,11 +7,11 @@ let players = [] // { name:player, score:0, voted:false }
 let currentRound = -1;
 
 let rounds = [
-  {prev:"Length of Leonardo flag pole in cm", current:"Number of employees at Luton", ans:"higher"},
-  {prev:"Number of employees at Luton", current:"Cost of Brite Cloud casing", ans:"lower"},
-  {prev:"Cost of Brite Cloud casing", current:"Average number of baked potatoes sold at the cantien", ans:"lower"},
-  {prev:"Average number of baked potatoes sold at the cantien", current:"Number of desk chairs on floor 1", ans:"lower"},
-  {prev:"Number of desk chairs on floor 1", current:"Distnace between Luton an Yeovil site in miles", ans:"higher"},
+  {prev:"Length of Leonardo flag pole in cm [940]", current:"Number of employees at Luton", ans:"higher"},
+  {prev:"Number of employees at Luton [1320]", current:"Cost of Brite Cloud casing", ans:"lower"},
+  {prev:"Cost of Brite Cloud casing [800]", current:"Average number of baked potatoes sold at the cantien", ans:"lower"},
+  {prev:"Average number of baked potatoes sold at the canteen per week [400]", current:"Number of desk chairs on floor one", ans:"lower"},
+  {prev:"Number of desk chairs on floor one [197]", current:"Distnace between Luton an Yeovil site in miles", ans:"lower"},
 ]
 
 // Get round
