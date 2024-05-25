@@ -4,36 +4,7 @@ const router = express.Router();
 
 let started = false;
 
-let players = [{ name:"Bob", score:2, voted:true },
-              { name:"Alice", score:1, voted:false },
-              { name:"Charlie", score:3, voted:true },
-              { name:"Charlie", score:3, voted:true },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-              { name:"Charlie", score:3, voted:false },
-
-
-
-] // { name:player, score:0, voted:false }
+let players = [] // { name:player, score:0, voted:false }
 
 let currentRound = -1;
 
@@ -41,6 +12,8 @@ let rounds = [
   {prev:"Length of Leonardo flag pole in cm", current:"Number of employees at Luton", ans:"higher"},
   {prev:"Number of employees at Luton", current:"Cost of Brite Cloud casing", ans:"lower"},
   {prev:"Cost of Brite Cloud casing", current:"Average number of baked potatoes sold at the cantien", ans:"lower"},
+  {prev:"Average number of baked potatoes sold at the cantien", current:"Number of desk chairs on floor 1", ans:"lower"},
+  {prev:"Number of desk chairs on floor 1", current:"Distnace between Luton an Yeovil site in miles", ans:"higher"},
 ]
 
 // Get round
@@ -65,6 +38,15 @@ router.get("/round", async (req, res) => {
 
 // Get all players
 router.get("/players", async (req, res) => {
+  res.json({
+    success: true,
+    payload: players})
+});
+
+// Clear all players
+router.get("/reset", async (req, res) => {
+  players = [];
+  currentRound = -1;
   res.json({
     success: true,
     payload: players})
