@@ -67,7 +67,7 @@ router.get("/playersRound", async (req, res) => {
 
 // Add Player
 router.post("/addPlayer/:name", async (req, res) => {
-  if(currentRound === -1) {
+  if(!currentRound === -1) {
     res.json({
       success: false,
       payload: "Game already started"
