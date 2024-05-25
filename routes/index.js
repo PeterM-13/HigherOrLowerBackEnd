@@ -2,8 +2,6 @@ import express from "express";
 const router = express.Router();
 //import nodemailer from 'nodemailer';
 
-let started = false;
-
 let players = [] // { name:player, score:0, voted:false }
 
 let currentRound = -1;
@@ -69,7 +67,7 @@ router.get("/playersRound", async (req, res) => {
 
 // Add Player
 router.post("/addPlayer/:name", async (req, res) => {
-  if (started) {
+  if(currentRound === -1) {
     res.json({
       success: false,
       payload: "Game already started"
@@ -83,7 +81,7 @@ router.post("/addPlayer/:name", async (req, res) => {
     }else{
       res.json({
         success: false,
-        payload: "Player already exists"
+        payload: "Player name already used"
       })
     }
     res.json({
@@ -93,7 +91,7 @@ router.post("/addPlayer/:name", async (req, res) => {
   }else{
     res.json({
       success: false,
-      payload: "Invalid Player Name"
+      payload: "Invalid player name"
     })
   }
 });
