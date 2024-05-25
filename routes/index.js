@@ -76,13 +76,13 @@ router.post("/addPlayer/:name", async (req, res) => {
   } 
   if(req.params.name !== undefined){
     let player = req.params.name;
-    if (!players.includes(player)) {
+    if (!players.some(p => p.name === player)) {
       players.push({name:player, score:0, voted:false});
-    }else{
+    } else {
       res.json({
-        success: false,
-        payload: "Player name already used"
-      })
+      success: false,
+      payload: "Player name already used"
+      });
     }
     res.json({
       success: true,
