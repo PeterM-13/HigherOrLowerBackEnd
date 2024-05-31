@@ -7,11 +7,16 @@ let players = [] // { name:player, score:0, voted:false }
 let currentRound = -1;
 
 let rounds = [
-  {prev:"Length of Leonardo flag pole in cm (940)", current:"Number of employees at Luton", ans:"higher"},
-  {prev:"Number of employees at Luton (1320)", current:"Cost of Brite Cloud casing", ans:"lower"},
-  {prev:"Cost of Brite Cloud casing (800)", current:"Average number of jacket potatoes sold at the canteen per week", ans:"lower"},
-  {prev:"Average number of jacket potatoes sold at the canteen per week (400)", current:"Number of desk chairs on floor one", ans:"lower"},
-  {prev:"Number of desk chairs on floor one (197)", current:"Distnace between Luton an Yeovil site in miles", ans:"lower"},
+  {prev:"Number of Leonardo sites world wide (111)", current:"Number of airports with Leonardo air traffic control systems", ans:"lower"},
+  {prev:"Number of airports with Leonardo air traffic control systems (200)", current:"Number of uncrewed drones", ans:"lower"},
+  {prev:"Number of uncrewed drones (825)", current:"Number of jets in service", ans:"lower"},
+  {prev:"Number of jets in service (7000)", current:"Number of helicopters in service", ans:"higher"},
+  {prev:"Number of helicopters in service (4300)", current:"Distance in Km betweel Luton and Yeovil sites", ans:"higher"},
+  {prev:"Distance in Km betweel Luton and Yeovil sites (232)", current:"Diameter of BriteCloud in mm", ans:"higher"},
+  {prev:"Diameter of BriteCloud in mm (55)", current:"Number of stairs from ground floor to level 3 at Luton", ans:"lower"},
+  {prev:"Number of stairs from ground floor to level 3 at Luton (66)", current:"Number of helicopter solutions currently in use", ans:"higher"},
+  {prev:"Number of helicopter solutions currently in use (17)", current:"New orders brought in during 2023, in billions", ans:"higher"},
+  {prev:"New orders brought in during 2023, in billions (5.3)", current:"Number of exhibitions attended by Leonardo in May 2024", ans:"lower"}
 ]
 
 // Get round
