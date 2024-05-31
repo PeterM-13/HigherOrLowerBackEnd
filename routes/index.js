@@ -11,8 +11,8 @@ let rounds = [
   {prev:"Number of airports with Leonardo air traffic control systems (200)", current:"Number of uncrewed drones", ans:"lower"},
   {prev:"Number of uncrewed drones (825)", current:"Number of jets in service", ans:"lower"},
   {prev:"Number of jets in service (7000)", current:"Number of helicopters in service", ans:"higher"},
-  {prev:"Number of helicopters in service (4300)", current:"Distance in Km betweel Luton and Yeovil sites", ans:"higher"},
-  {prev:"Distance in Km betweel Luton and Yeovil sites (232)", current:"Diameter of BriteCloud in mm", ans:"higher"},
+  {prev:"Number of helicopters in service (4300)", current:"Distance in Km between Luton and Yeovil sites", ans:"higher"},
+  {prev:"Distance in Km between Luton and Yeovil sites (232)", current:"Diameter of BriteCloud in mm", ans:"higher"},
   {prev:"Diameter of BriteCloud in mm (55)", current:"Number of stairs from ground floor to level 3 at Luton", ans:"lower"},
   {prev:"Number of stairs from ground floor to level 3 at Luton (66)", current:"Number of helicopter solutions currently in use", ans:"higher"},
   {prev:"Number of helicopter solutions currently in use (17)", current:"New orders brought in during 2023, in billions", ans:"higher"},
@@ -83,16 +83,16 @@ router.post("/addPlayer/:name", async (req, res) => {
     let player = req.params.name;
     if (!players.some(p => p.name === player)) {
       players.push({name:player, score:0, voted:false});
+      res.json({
+        success: true,
+        payload: player
+      })
     } else {
       res.json({
       success: false,
       payload: "Player name already used"
       });
     }
-    res.json({
-      success: true,
-      payload: player
-    })
   }else{
     res.json({
       success: false,
@@ -116,7 +116,7 @@ router.post("/admin/nextRound", async (req, res) => {
   }else{
   res.json({
     success: true,
-    payload: {round:currentRound}
+    payload: {roundNum:currentRound, nextRound:rounds[currentRound]}
   })
 }
 })
