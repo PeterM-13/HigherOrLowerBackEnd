@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 
 // CORS configuration
 const corsOptions = {
-  origin: 'https://peter-metcalfe.co.uk/Leonardo/HigherOrLower/gamePage.html',
+  origin: 'https://peter-metcalfe.co.uk/Leonardo/',
   optionsSuccessStatus: 200
 };
 
