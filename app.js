@@ -5,18 +5,15 @@ import cors from "cors";
 const app = express();
 const port = process.env.PORT || 5000;
 
-// CORS configuration
-const corsOptions = {
-  origin: 'https://peter-metcalfe.co.uk',
-  credentials: true,
-  optionsSuccessStatus: 200
-};
-
 // Setting headers to link frontend and backend
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 app.use("/api", router);
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
 
 app.listen(port, () => {
   console.log(`Server running and listening on port ${port}`);
