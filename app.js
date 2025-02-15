@@ -7,12 +7,12 @@ const port = process.env.PORT || 5000;
 
 // CORS configuration
 const corsOptions = {
-  origin: 'https://peter-metcalfe.co.uk/Leonardo/',
+  origin: 'https://Peter-Metcalfe.co.uk/',
   optionsSuccessStatus: 200
 };
 
 // Setting headers to link frontend and backend
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 app.use("/api", router);
