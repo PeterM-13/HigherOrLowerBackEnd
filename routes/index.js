@@ -18,6 +18,7 @@ let rounds = [
 
 // Get round
 router.get("/round", async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
   if(currentRound === -1){
     res.json({
       success: false,
