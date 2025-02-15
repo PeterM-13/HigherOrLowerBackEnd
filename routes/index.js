@@ -7,16 +7,13 @@ let players = [] // { name:player, score:0, voted:false }
 let currentRound = -1;
 
 let rounds = [
-  {prev:"Number of Leonardo sites world wide (111)", current:"Number of airports with Leonardo air traffic control systems", ans:"lower"},
-  {prev:"Number of airports with Leonardo air traffic control systems (200)", current:"Number of uncrewed drones", ans:"lower"},
-  {prev:"Number of uncrewed drones (825)", current:"Number of jets in service", ans:"lower"},
-  {prev:"Number of jets in service (7000)", current:"Number of helicopters in service", ans:"higher"},
-  {prev:"Number of helicopters in service (4300)", current:"Distance in Km between Luton and Yeovil sites", ans:"higher"},
-  {prev:"Distance in Km between Luton and Yeovil sites (232)", current:"Diameter of BriteCloud in mm", ans:"higher"},
-  {prev:"Diameter of BriteCloud in mm (55)", current:"Number of stairs from ground floor to level 3 at Luton", ans:"lower"},
-  {prev:"Number of stairs from ground floor to level 3 at Luton (66)", current:"Number of helicopter solutions currently in use", ans:"higher"},
-  {prev:"Number of helicopter solutions currently in use (17)", current:"New orders brought in during 2023, in billions", ans:"higher"},
-  {prev:"New orders brought in during 2023, in billions (5.3)", current:"Number of exhibitions attended by Leonardo in May 2024", ans:"lower"}
+  {prev:"Number of Leonardo sites in UK (9)", current:"Number of millions Brite Cloud secured for milestone Iguana 1.1", ans:"lower"},
+  {prev:"Number of millions Brite Cloud secured for milestone Iguana 1.1 (7)", current:"Number of sections on Leonardo parachute logo", ans:"higher"},
+  {prev:"Number of sections on Leonardo parachute logo (8)", current:"The number in Leonardo Luton postcode", ans:"higher"},
+  {prev:"The number in Leonardo Luton postcode (13)", current:"MicroMouse Compentition Final data", ans:"higher"},
+  {prev:"MicroMouse Compentition Final data (28)", current:"The electricity consumption of Leonardo UK 2023, in millions, in kWh", ans:"higher"},
+  {prev:"The electricity consumption of Leonardo UK 2023, in millions, in kWh (76)", current:"Rough number of parking spaces in guest car park", ans:"lower"},
+  {prev:"Rough number of parking spaces in guest car park (54)", current:"Number of meters to walk to Greggs", ans:"higher"},
 ]
 
 // Get round
