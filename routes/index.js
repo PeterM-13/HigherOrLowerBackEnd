@@ -11,7 +11,7 @@ let rounds = [
   {prev:"Number of millions Brite Cloud secured for milestone Iguana 1.1 (7)", current:"Number of sections on Leonardo parachute logo", ans:"lower"},
   {prev:"Number of sections on Leonardo parachute logo (8)", current:"The number in Leonardo Luton postcode", ans:"lower"},
   {prev:"The number in Leonardo Luton postcode (13)", current:"MicroMouse Compentition Final data", ans:"lower"},
-  {prev:"MicroMouse Compentition Final data (28)", current:"The electricity consumption of Leonardo UK 2023, in millions, in kWh", ans:"lower"},
+  {prev:"MicroMouse compentition final date (28)", current:"The electricity consumption of Leonardo UK 2023, in millions, in kWh", ans:"lower"},
   {prev:"The electricity consumption of Leonardo UK 2023, in millions, in kWh (76)", current:"Rough number of parking spaces in guest car park", ans:"higher"},
   {prev:"Rough number of parking spaces in guest car park (54)", current:"Number of meters to walk to Greggs", ans:"lower"},
 ]
