@@ -7,20 +7,20 @@ let players = [] // { name:player, score:0, voted:false }
 let currentRound = -1;
 
 let rounds = [
-  {prev:"Number of Leonardo UK sites (9)", current:"Funding MOD budgeted for Tempest for the next 10 years, in billions", ans:"higher"},
-  {prev:"Funding MOD budgeted for Tempest for the next 10 years, in billions (12)", current:"Number of sections on Leonardo parachute logo", ans:"lower"},
-  {prev:"Number of sections on Leonardo parachute logo (8)", current:"Percentage of women working in engineering in 2023 workforce", ans:"higher"},
-  {prev:"Percentage of women working in engineering in 2023 workforce (15.7)", current:"Number of Leonardo helicopter solutions currently in use", ans:"higher"},
-  {prev:"Number of Leonardo helicopter solutions currently in use (17)", current:"Leonardo’s 2024 revenues, in billions", ans:"higher"},
-  {prev:"Leonardo’s 2024 revenues, in billions (17.8)", current:"The number of years until GCAP will enter service", ans:"lower"},
-  {prev:"The number of years until GCAP will enter service (10)", current:"Overall percentage of apprentices in the workforce", ans:"lower"},
-  {prev:"Overall percentage of apprentices in the workforce (5.2)", current:"Number of airports with Leonardo air traffic control systems", ans:"higher"},
-  {prev:"Number of airports with Leonardo air traffic control systems (600)", current:"Number of apprentices recruited by Team Tempest Partners since 2018", ans:"higher"},
-  {prev:"Number of apprentices recruited by Team Tempest Partners since 2018 (1100)", current:"Leonardo’s investment into R&D, in 2024, in millions", ans:"higher"},
-  {prev:"Leonardo’s investment into R&D, in 2024, in millions (2500)", current:"How many people are working on Tempest across the UK", ans:"higher"},
+  {prev:"Number of Leonardo UK sites (9)", current:"Funding MOD budgeted for Tempest for the next 10 years, in billions", ans:"lower"},
+  {prev:"Funding MOD budgeted for Tempest for the next 10 years, in billions (12)", current:"Number of sections on Leonardo parachute logo", ans:"higher"},
+  {prev:"Number of sections on Leonardo parachute logo (8)", current:"Percentage of women working in engineering in 2023 workforce", ans:"lower"},
+  {prev:"Percentage of women working in engineering in 2023 workforce (15.7)", current:"Leonardo’s 2024 revenues, in billions", ans:"lower"},
+  {prev:"Leonardo’s 2024 revenues, in billions (17.8)", current:"Number of Leonardo helicopter solutions currently in use", ans:"higher"},
+  {prev:"Number of Leonardo helicopter solutions currently in use (17)", current:"The number of years until GCAP will enter service", ans:"higher"},
+  {prev:"The number of years until GCAP will enter service (10)", current:"Overall percentage of apprentices in the workforce", ans:"higher"},
+  {prev:"Overall percentage of apprentices in the workforce (5.2)", current:"Number of airports with Leonardo air traffic control systems", ans:"lower"},
+  {prev:"Number of airports with Leonardo air traffic control systems (600)", current:"Number of apprentices recruited by Team Tempest Partners since 2018", ans:"lower"},
+  {prev:"Number of apprentices recruited by Team Tempest Partners since 2018 (1100)", current:"Leonardo’s investment into R&D, in 2024, in millions", ans:"lower"},
+  {prev:"Leonardo’s investment into R&D, in 2024, in millions (2500)", current:"How many people are working on Tempest across the UK", ans:"lower"},
   {prev:"How many people are working on Tempest across the UK (3500)", current:"Number of countries using Leonardo radar systems", ans:"higher"},
-  {prev:"Number of countries using Leonardo radar systems (150)", current:"Number of years Leonardo’s heritage in EW spans", ans:"lower"},
-  {prev:"Number of years Leonardo’s heritage in EW spans (122)", current:"Number of Leonardo sites worldwide", ans:"higher"},
+  {prev:"Number of countries using Leonardo radar systems (150)", current:"Number of years Leonardo’s heritage in EW spans", ans:"higher"},
+  {prev:"Number of years Leonardo’s heritage in EW spans (122)", current:"Number of Leonardo sites worldwide", ans:"lower"},
 ]
 
 // Get round
