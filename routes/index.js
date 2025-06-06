@@ -7,13 +7,20 @@ let players = [] // { name:player, score:0, voted:false }
 let currentRound = -1;
 
 let rounds = [
-  {prev:"Number of Leonardo sites in UK (9)", current:"Number of millions Brite Cloud secured for milestone Iguana 1.1", ans:"higher"},
-  {prev:"Number of millions Brite Cloud secured for milestone Iguana 1.1 (7)", current:"Number of sections on Leonardo parachute logo", ans:"lower"},
-  {prev:"Number of sections on Leonardo parachute logo (8)", current:"The number in Leonardo Luton postcode", ans:"lower"},
-  {prev:"The number in Leonardo Luton postcode (13)", current:"MicroMouse Compentition Final data", ans:"lower"},
-  {prev:"MicroMouse compentition final date (28)", current:"The electricity consumption of Leonardo UK 2023, in millions, in kWh", ans:"lower"},
-  {prev:"The electricity consumption of Leonardo UK 2023, in millions, in kWh (76)", current:"Rough number of parking spaces in guest car park", ans:"higher"},
-  {prev:"Rough number of parking spaces in guest car park (54)", current:"Number of meters to walk to Greggs", ans:"lower"},
+  {prev:"Number of Leonardo UK sites (9)", current:"Funding MOD budgeted for Tempest for the next 10 years, in billions", ans:"higher"},
+  {prev:"Funding MOD budgeted for Tempest for the next 10 years, in billions (12)", current:"Number of sections on Leonardo parachute logo", ans:"lower"},
+  {prev:"Number of sections on Leonardo parachute logo (8)", current:"Percentage of women working in engineering in 2023 workforce", ans:"higher"},
+  {prev:"Percentage of women working in engineering in 2023 workforce (15.7)", current:"Number of Leonardo helicopter solutions currently in use", ans:"higher"},
+  {prev:"Number of Leonardo helicopter solutions currently in use (17)", current:"Leonardo’s 2024 revenues, in billions", ans:"higher"},
+  {prev:"Leonardo’s 2024 revenues, in billions (17.8)", current:"The number of years until GCAP will enter service", ans:"lower"},
+  {prev:"The number of years until GCAP will enter service (10)", current:"Overall percentage of apprentices in the workforce", ans:"lower"},
+  {prev:"Overall percentage of apprentices in the workforce (5.2)", current:"Number of airports with Leonardo air traffic control systems", ans:"higher"},
+  {prev:"Number of airports with Leonardo air traffic control systems (600)", current:"Number of apprentices recruited by Team Tempest Partners since 2018", ans:"higher"},
+  {prev:"Number of apprentices recruited by Team Tempest Partners since 2018 (1100)", current:"Leonardo’s investment into R&D, in 2024, in millions", ans:"higher"},
+  {prev:"Leonardo’s investment into R&D, in 2024, in millions (2500)", current:"How many people are working on Tempest across the UK", ans:"higher"},
+  {prev:"How many people are working on Tempest across the UK (3500)", current:"Number of countries using Leonardo radar systems", ans:"higher"},
+  {prev:"Number of countries using Leonardo radar systems (150)", current:"Number of years Leonardo’s heritage in EW spans", ans:"lower"},
+  {prev:"Number of years Leonardo’s heritage in EW spans (122)", current:"Number of Leonardo sites worldwide", ans:"higher"},
 ]
 
 // Get round
